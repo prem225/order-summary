@@ -1,0 +1,116 @@
+body{
+    background-color:  hsl(225, 100%, 94%);
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+.content{
+    margin: auto;
+    background-color: #fff;
+    width:450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    top: 10%;
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 1000;
+    font-size: 28px;
+    padding-top: 5%;
+    padding-left: 120px;
+}
+.paragraph{
+     color:hsl(224, 23%, 55%);
+     font-size: 16px;
+     font-weight: 500;
+     padding-top: 5;
+     padding-left: 90px; 
+     padding-right: 50px;
+     line-height: 1.6;
+}
+.image{
+    height: 200px;
+    background-position: center;
+}
+.pay{
+    margin: auto;
+    width: 300px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.pay> h4{
+
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    
+}
+.pay>p{
+    
+    color:hsl(224, 23%, 55%);
+    font-size: 16px;
+    
+}
+.change-button{
+    background-color: hsl(225, 100%, 98%);
+    text-decoration: underline;
+    font-weight: 600;
+    color: hsl(245, 75%, 52%);
+    margin-left:10px;
+}
+.proceed-button{
+    text-align: right;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    color: #fff;
+    margin: auto;
+    width: 335px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: hsl(245, 75%, 52%)1px 5px 25px -6px;
+    margin-bottom: 3rem;
+}
+.cancel-button{
+    color:hsl(224, 23%, 55%) ;
+    font-weight: 700;
+    margin-left:170px;
+    font-size: 14px;
+    margin-bottom: 3rem;
+}
+@media(max-width:600px){
+    body{
+        background-image: url("images/pattern-background-mobile.svg");
+        background-size: cover;
+    }
+    .content{
+        width: 90vw;
+        max-width: 330px;
+    }
+    .pay{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .pay> h4{
+        font-size: 25px;
+    }
+    .pay> p{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+}
